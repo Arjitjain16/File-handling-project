@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>document</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <form action="/createfile" method="post">
+          <input type="text" name="filename" placeholder="Enter your file name with extension">
+        </form>
+        <ul>
+          <% filename.forEach((file, index)=>{ %>
+            <li><a href=""><%= file %></a></li>
+         <%})%>
+        </ul>
+      </div>
+      <div class="right"></div>
+    </div>
+  </body>
+</html>

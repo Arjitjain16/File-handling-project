@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+
+.container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  padding: 1vmax;
+}
+
+.left{
+  height: 100%;
+  width: 20%;
+  background-color: rgb(232, 224, 224);
+}
+.right{
+  height: 100%;
+}
