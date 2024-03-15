@@ -20,6 +20,7 @@ html,body{
   height: 100%;
   width: 20%;
   background-color: rgb(232, 224, 224);
+  padding: 2vmax;
 }
 .right{
   height: 100%;

@@ -11,12 +11,18 @@
           <input type="text" name="filename" placeholder="Enter your file name with extension">
         </form>
         <ul>
-          <% filename.forEach((file, index)=>{ %>
-            <li><a href=""><%= file %></a></li>
+          <% files.forEach((file, index)=>{ %>
+            <li><a href="/file/<%= file %>"><%= file %></a></li>
          <%})%>
         </ul>
       </div>
-      <div class="right"></div>
+      <div class="right">
+        <form action="">
+          <textarea cols="30" rows="10">
+            <%= fileread %>
+          </textarea>
+        </form>
+      </div>
     </div>
   </body>
 </html>
