@@ -21,11 +21,18 @@
         </ul>
       </div>
       <div class="right">
-        <form action="">
-          <textarea cols="30" rows="10">
+        <form method="post" action="/update/<%= filenaam %>">
+          <textarea cols="30" rows="10" name="fileread">
             <%= fileread %>
           </textarea>
+
+          <br>
+          <br>
+
+          <button>save</button>
         </form>
+
+
       </div>
     </div>
   </body>
