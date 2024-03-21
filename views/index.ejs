@@ -14,7 +14,7 @@
           <% files.forEach((file, index)=>{ %>
             <li>
               <a href="/file/<%= file %>"><%= file %></a>
-              <a href="/delete/<%= file %>">delete</a>
+              <a href="/delete/<%= file %>"><button>delete</button></a>
             </li>
             
          <%})%>
@@ -22,7 +22,7 @@
       </div>
       <div class="right">
         <form method="post" action="/update/<%= filenaam %>">
-          <textarea cols="30" rows="10" name="fileread">
+          <textarea cols="140" rows="32" name="fileread">
             <%= fileread %>
           </textarea>
 
